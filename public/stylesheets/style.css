@@ -1,0 +1,190 @@
+:root {
+  --header-min-height: 50px;
+  --page-width: 1024px;
+}
+
+* {
+  padding: 0;
+  margin:0;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+#headerContainer {
+  width:100%;
+  min-height:var(--header-min-height);
+  background-color:#000000;
+}
+
+#navContainer {
+  width:var(--page-width);
+  min-height:var(--header-min-height);
+  margin:auto;
+  padding:0;
+}
+
+.navItem {
+  float:left;
+}
+
+.navAnchor {
+  float:left;
+  color:#ffffff;
+  font-size:18px;
+  text-decoration: none;
+  padding:13px 10px 13px 10px;
+}
+
+.navItem:first-child .navAnchor { 
+  padding:13px 10px 13px 0;
+}
+
+#navSearch {
+  float:right;
+  min-width:200px;
+  max-height:50px;
+  padding:0 0 0 25px;
+}
+
+#navSearch form {
+  float:left;
+}
+
+#searchInput {
+  width:200px;
+  float:left;
+  outline:0;
+  padding:5px;
+  margin:10px 0 0 0;
+  font-size:12px;
+}
+
+#searchSubmit {
+  width:24px;
+  height:24px;
+  background-image:url('../icons/search.jpg');
+  background-repeat: no-repeat;
+  float:left;
+  border:0;
+  margin:12px 0 10px 10px;
+  cursor:pointer;
+}
+
+.socialIcon {
+  height:24px;
+  margin:12px 0 10px 10px;
+  float:left;
+}
+
+#wrapper {
+  width:100%;
+  float:left;
+}
+
+#wrapperAlign {
+  width:var(--page-width);
+  margin:auto;
+}
+
+main {
+  width:var(--page-width);
+  float:left;
+}
+
+#headerLogoContainer {
+  width:var(--page-width);
+  float:left;
+}
+
+#pageLogo {
+  float:left;
+  margin:0 0 20px 0;
+}
+
+#pageAside {
+  width:250px;
+  min-height:400px;
+  padding:10px;
+  float:left;
+}
+
+#asideTitle {
+  width:250px;
+  float:left;
+  text-align: center;
+  font-size:20px;
+}
+
+#asideNav {
+  width:250px;
+  float:left;
+  background-color:#000000;
+  padding:0;
+  margin:20px 0 0 0;
+}
+
+.asideNavItem {
+  float:left;
+  width:210px;
+  min-height:20px;
+  color:#ffffff;
+  font-size:18px;
+  padding:20px;
+  cursor: pointer;
+  border-bottom:1px solid #ffffff;
+}
+
+.asideInfo {
+  width:200px;
+  float:left;
+  padding:0 25px 0 25px;
+}
+
+.asideSubTitle {
+  float:left;
+  width:200px;
+  font-size:16px;
+  margin:20px 0 20px 0;
+  font-weight: bold;
+}
+
+.asideSubText {
+  float:left;
+  width:200px;
+  font-size:16px;
+}
+
+#dynamicContent {
+  width:730px;
+  min-height:200px;
+  float:right;
+}
+
+footer {
+  width:100%;
+  float:left;
+  margin:0 0 10px 0;
+}
+
+#footerContainer {
+  width:912px;
+  margin:auto;
+  color:#555555;
+  font-size:14px;
+}
+
+#footerContainer li {
+  float:left;
+  padding:10px 20px 10px 20px;
+}
+
+#footerContainer li:first-child {
+  padding:10px 20px 10px 0;
+}
+
+#footerContainer li:last-child {
+  padding:10px 0 10px 20px;
+}
