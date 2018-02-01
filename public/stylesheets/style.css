@@ -161,6 +161,7 @@ main {
   width:730px;
   min-height:200px;
   float:right;
+  margin:0 0 20px 0;
 }
 
 footer {
@@ -187,4 +188,161 @@ footer {
 
 #footerContainer li:last-child {
   padding:10px 0 10px 20px;
+}
+
+#productContainer {
+  width: 730px;
+  float:left;
+  min-height:100px;
+}
+
+.productItem {
+  width:230px;
+  float:left;
+  min-height:100px;
+  margin:0 20px 40px 0;
+}
+
+.productItem:nth-child(3n) {
+  margin-right: 0;
+}
+
+.productImage {
+  float:left;
+  width:100px;
+  height:120px;
+}
+
+.productTitle {
+  width:110px;
+  float:left;
+  font-size:14px;
+  font-weight: lighter;
+  margin:20px 10px 0 10px;
+  height:50px;
+}
+
+.productBtn {
+  float:left;
+  width:150px;
+  margin:5px 40px 0 40px;
+  color:#fff;
+  background-color:#000;
+  font-size:16px;
+  border:0;
+  border-radius:15px;
+  padding:5px 0 5px 0;
+  cursor:pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.productPrice {
+  width:110px;
+  float:left;
+  font-size:16px;
+  font-weight: bolder;
+  margin:30px 10px 10px 10px;
+}
+
+#productLeft {
+  float:left;
+  width:400px;
+}
+
+#prodTitle {
+  width:400px;
+  font-size:25px;
+  float:left;
+  margin:50px 0 0 0;
+}
+
+#prodDescription {
+  width:400px;
+  font-size:16px;
+  float:left;
+  margin:20px 0 0 0;
+  height:120px;
+}
+
+#prodPrice {
+  width:400px;
+  font-size:18px;
+  float:left;
+  margin:20px 0 0 0;
+  font-weight: bolder;
+}
+
+#prodImage {
+  width:330px;
+  float:right;
+}
+
+
+
+
+
+.indexPContainer {
+  width:365px;
+  min-height:200px;
+  float:left;
+}
+
+.indexPImage {
+  width:365px;
+  float:left;
+}
+
+.indexPTitle {
+  width:365px;
+  float:left;
+  font-size:22px;
+  text-align: center;
+  margin:20px 0 0 0;
+}
+
+.indexPDescription {
+  width:365px;
+  float:left;
+  font-size:16px;
+  text-align: center;
+  margin:10px 0 0 0;
+}
+
+.indexPPrice {
+  width:365px;
+  float:left;
+  font-size:20px;
+  text-align: center;
+  margin:20px 0 0 0;
+  font-weight: bolder;
+}
+
+.indexPBtn {
+  float:left;
+  width:150px;
+  margin:20px 0 0 107px;
+  color:#fff;
+  background-color:#000;
+  font-size:16px;
+  border:0;
+  border-radius:15px;
+  padding:5px 0 5px 0;
+  cursor:pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+#pagelandTitle {
+  width:730px;
+  float:left;
+  margin:60px 0 0 0;
+  font-size:18px;
+}
+
+.pagelandDescription {
+  width:730px;
+  float:left;
+  margin:20px 0 0 0;
+  font-size:16px;
 }

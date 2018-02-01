@@ -19,8 +19,8 @@
             <a class="navAnchor" href="/produkter">Produkter</a>
         </li>
         <li id="navSearch">
-            <form method="post" action="/src">
-                <input type="text" id="searchInput"/ name="query" value="<%= srcQuery %>">
+            <form method="get" action="/src">
+                <input type="text" id="searchInput"/ name="q" value="<%= srcQuery %>">
                 <input type="submit" id="searchSubmit" value=""/> 
             </form>
             <a href="www.facebook.com" class="socialIcon">

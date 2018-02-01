@@ -1,0 +1,23 @@
+{
+    "products": [
+        {"id":1, "name":"Klassisk brun", "image":"1_klassisk_brun.jpg", "price":350, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":2, "name":"Stribet stil", "image":"2_stribet_stil.jpg", "price":550, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":3, "name":"Brudgommens favorit", "image":"3_brudgommens_favorit.jpg", "price":350, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":4, "name":"Sølvpil", "image":"4_soelvpil.jpg", "price":350, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":5, "name":"Rød", "image":"5_roed_f11.jpg", "price":350, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":6, "name":"Blå kant", "image":"6_blaa_kant.jpg", "price":450, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":7, "name":"Fars favorit", "image":"7_fars_favorit.jpg", "price":450, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":8, "name":"Sort nat", "image":"8_sort_nat.jpg", "price":350, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":9, "name":"Blå", "image":"9_blue.jpg", "price":350, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":10, "name":"Tern", "image":"10_tern.jpg", "price":450, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":11, "name":"Ræven", "image":"11_raeven.jpg", "price":450, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":12, "name":"Kinini", "image":"12_kinini.jpg", "price":350, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":13, "name":"Europa", "image":"13_europa.jpg", "price":350, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"},
+        {"id":14, "name":"Kina", "image":"14_kina.jpg", "price":350, "description":"Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.", "summary":"Til den stilbevidste"}
+    ],
+    "users": [
+        {"name":"Anders Hansen", "stilling":"Direktør", "email":"chefen@slipseknuden.eu", "image":"andershansen.jpg"},
+        {"name":"Jan Frandsen", "stilling":"Sælger", "email":"jf@slipseknuden.eu", "image":"janfrandsen.jpg"},
+        {"name":"Annelise Johnson", "stilling":"Sekretær", "email":"info@slipseknuden.eu", "image":"annelisejohnson.jpg"}
+    ]
+ }

@@ -1,0 +1,23 @@
+<% if(productData == null) { %>
+    <p>Intet at vise, vend tilbage til forsiden ved at <a href="/">klikke her</a>.</p>
+<% } else { %>
+    <% if(productData.length == 1) { %>
+        <% productData.forEach((element) => { %>
+            <div id="productLeft">
+                <h2 id="prodTitle"><%= element.name %></h2>
+                <p id="prodDescription"><%= element.description %></p>
+                <p id="prodPrice">Pris: DKK <%= element.price %>,-</p>
+            </div>
+            <img id="prodImage" src="images/<%= element.image %>">
+        <% }) %>
+    <% } else { %>
+        <% productData.forEach((element) => { %>
+            <li class="productItem">
+                <img class="productImage" src="images/<%= element.image %>">
+                <h2 class="productTitle"><%= element.name %></h2>
+                <p class="productPrice"><%= element.price %> DKK</p>
+                <a class="productBtn" href="/produkter?id=<%= element.id %>">Info</a>
+            </li>
+        <% }) %>
+    <% } %>
+<% } %>

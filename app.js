@@ -29,7 +29,7 @@ app.get('/garanti', data.insurance);
 app.get('/kontakt', data.contact);
 app.get('/nyheder', data.news);
 app.get('/produkter', data.products);
-app.post('/src', data.search);
+app.get('/src', data.search);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

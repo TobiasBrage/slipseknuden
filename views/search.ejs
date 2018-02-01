@@ -16,7 +16,20 @@
                         <%- include asideSubIndex %>
                     </aside>
                     <div id="dynamicContent">
-                        <%= srcQuery %>
+                        <% if(srcResult == null) { %>
+                            <p>Ingen resultater</p>
+                        <% } else { %>
+                            <ul id="productContainer">
+                            <% srcResult.forEach((element) => { %>
+                                <li class="productItem">
+                                    <img class="productImage" src="images/<%= element.image %>">
+                                    <h2 class="productTitle"><%= element.name %></h2>
+                                    <p class="productPrice"><%= element.price %> DKK</p>
+                                    <a class="productBtn" href="/produkter?id=<%= element.id %>">Info</a>
+                                </li>
+                            <% }) %>
+                            </ul>
+                        <% } %>
                     </div>
                 </main>
                 <%- include footer %>

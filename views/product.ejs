@@ -2,7 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Produkter</title>
+        <title><% if(productData == null) { %>
+            Produkt
+        <% } else { %>
+            <% productData.forEach((element) => { %>
+                <%= element.name %>
+            <% }) %>
+        <% } %></title>
         <link rel='stylesheet' href='stylesheets/style.css'/>
     </head>
     <body>
@@ -16,7 +22,7 @@
                         <%- include asideSubIndex %>
                     </aside>
                     <div id="dynamicContent">
-                        <%- include productsContent %>
+                        <%- include productContent %>
                     </div>
                 </main>
                 <%- include footer %>
