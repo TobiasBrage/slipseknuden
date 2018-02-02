@@ -32,9 +32,10 @@ exports.news = function(req, res){
 
 exports.products = function(req, res){
   var json = require('../public/json/data.json').products;
+  var result = [];
+  var resultCat = [];
   if(req.query.id) {
     var productId = req.query.id;   
-    var result = [];
     if(productId.length >= 1) {
       json.forEach(element => {
         if(element.id == productId) {
@@ -47,13 +48,27 @@ exports.products = function(req, res){
     if(result.length == 0) {
       noResult();
     }
-    res.render('product',{srcQuery: '', productData: result});
+    res.render('product',{srcQuery: '', productData: result, productCatData: resultCat});
+  } else if (req.query.cat) {
+    var productCat = req.query.cat; 
+    if(productCat.length >= 1) {
+      json.forEach(catElement => {
+        if(catElement.category == productCat) {
+          resultCat.push(catElement);
+        }
+      });
+    } else {
+      noResult();
+    }
+    if(resultCat.length == 0) {
+      noResult();
+    }
+    res.render('product',{srcQuery: '', productData: json, productCatData: resultCat});
   } else {
-    console.log('alle');
-    res.render('product',{srcQuery: '', productData: json});
+    res.render('product',{srcQuery: '', productData: json, productCatData: resultCat});
   }
   function noResult() {
-    res.render('product',{srcQuery: '', productData: null});
+    res.render('product',{srcQuery: '', productData: null, productCatData: resultCat});
   }
 };
 

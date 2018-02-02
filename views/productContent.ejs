@@ -1,23 +1,32 @@
-<% if(productData == null) { %>
-    <p>Intet at vise, vend tilbage til forsiden ved at <a href="/">klikke her</a>.</p>
+<% var categories = ["Shoon", "Korea Special", "US. Imports", "Sleek Fabrics UK"]; %>    
+<% if(productData.length == 1) { %>
+    <% productData.forEach((element) => { %>
+        <div id="productLeft">
+            <h1 class="prodCategory"><%= categories[element.category] %></h1>
+            <h2 id="prodTitle"><%= element.name %></h2>
+            <p id="prodDescription"><%= element.description %></p>
+            <p id="prodPrice">Pris: DKK <%= element.price %>,-</p>
+        </div>
+        <img id="prodImage" src="images/<%= element.image %>">
+    <% }) %>
+<% } else if(productCatData.length != 0) { %>
+    <% productCatData.forEach((catElement) => { %>
+        <li class="productItem">
+            <img class="productImage" src="images/<%= catElement.image %>">
+            <p class="productCategory"><%= categories[catElement.category] %></p>
+            <h2 class="productTitle"><%= catElement.name %></h2>
+            <p class="productPrice"><%= catElement.price %> DKK</p>
+            <a class="productBtn" href="/produkter?id=<%= catElement.id %>">Info</a>
+        </li>
+    <% }) %>
 <% } else { %>
-    <% if(productData.length == 1) { %>
-        <% productData.forEach((element) => { %>
-            <div id="productLeft">
-                <h2 id="prodTitle"><%= element.name %></h2>
-                <p id="prodDescription"><%= element.description %></p>
-                <p id="prodPrice">Pris: DKK <%= element.price %>,-</p>
-            </div>
-            <img id="prodImage" src="images/<%= element.image %>">
-        <% }) %>
-    <% } else { %>
-        <% productData.forEach((element) => { %>
-            <li class="productItem">
-                <img class="productImage" src="images/<%= element.image %>">
-                <h2 class="productTitle"><%= element.name %></h2>
-                <p class="productPrice"><%= element.price %> DKK</p>
-                <a class="productBtn" href="/produkter?id=<%= element.id %>">Info</a>
-            </li>
-        <% }) %>
-    <% } %>
+    <% productData.forEach((element) => { %>
+        <li class="productItem">
+            <img class="productImage" src="images/<%= element.image %>">
+            <p class="productCategory"><%= categories[element.category] %></p>
+            <h2 class="productTitle"><%= element.name %></h2>
+            <p class="productPrice"><%= element.price %> DKK</p>
+            <a class="productBtn" href="/produkter?id=<%= element.id %>">Info</a>
+        </li>
+    <% }) %>
 <% } %>

@@ -4,11 +4,14 @@
         <meta charset="UTF-8">
         <title><% if(productData == null) { %>
             Produkt
-        <% } else { %>
+        <% } else if (productData.length == 1) { %>
             <% productData.forEach((element) => { %>
                 <%= element.name %>
             <% }) %>
-        <% } %></title>
+        <% } else { %>
+            Alle produkter
+        <% } %>
+        </title>
         <link rel='stylesheet' href='stylesheets/style.css'/>
     </head>
     <body>

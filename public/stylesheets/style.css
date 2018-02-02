@@ -128,13 +128,17 @@ main {
 
 .asideNavItem {
   float:left;
+  border-bottom:1px solid #ffffff;
+}
+
+.asideNavItem a {
+  float:left;
+  text-decoration: none;
+  color:#fff;
+  font-size:18px;
   width:210px;
   min-height:20px;
-  color:#ffffff;
-  font-size:18px;
   padding:20px;
-  cursor: pointer;
-  border-bottom:1px solid #ffffff;
 }
 
 .asideInfo {
@@ -213,13 +217,22 @@ footer {
   height:120px;
 }
 
+.productCategory {
+  width:110px;
+  float:left;
+  font-size:14px;
+  font-weight: bolder;
+  margin:20px 10px 0 10px;
+  height:25px;
+}
+
 .productTitle {
   width:110px;
   float:left;
   font-size:14px;
   font-weight: lighter;
-  margin:20px 10px 0 10px;
-  height:50px;
+  margin:15px 10px 0 10px;
+  height:15px;
 }
 
 .productBtn {
@@ -242,7 +255,7 @@ footer {
   float:left;
   font-size:16px;
   font-weight: bolder;
-  margin:30px 10px 10px 10px;
+  margin:20px 10px 10px 10px;
 }
 
 #productLeft {
@@ -250,11 +263,18 @@ footer {
   width:400px;
 }
 
-#prodTitle {
+#prodCategory {
   width:400px;
   font-size:25px;
   float:left;
   margin:50px 0 0 0;
+}
+
+#prodTitle {
+  width:400px;
+  font-size:25px;
+  float:left;
+  margin:20px 0 0 0;
 }
 
 #prodDescription {
